@@ -41,12 +41,12 @@ public class Barn {
         this.animalList = animalList;
     }
 
-    public void addAnimal(Animal animal){
+    public void addAnimal(Animal animal) {
         animalList.add(animal);
     }
 
-    public boolean deleteAnimal(Animal animal){
-        for (Animal a: animalList){
+    public boolean deleteAnimal(Animal animal) {
+        for (Animal a : animalList) {
             if (a.getName().equals(animal.getName()) && a.getSpecies().equals(animal.getSpecies()) && a.getAge() == animal.getAge()) {
                 animalList.remove(a);
                 return true;
